@@ -1,0 +1,27 @@
+class LuasTanah {
+    constructor(p,l){
+        this.panjang = p
+        this.lebar = l
+    }
+
+    luas = () => {
+        return this.panjang * this.lebar
+    }
+
+    hargatanah = () => {
+        return (1500000*this.panjang*this.lebar)
+    }
+
+    hargatanahppn = () => {
+        return (1500000*this.panjang*this.lebar*15/100)+
+        (1500000*this.panjang*this.lebar)
+    }
+
+}
+let tanah = new LuasTanah (20.5,30)
+console.log("Luas Tanah dengan ukuran 20,5m x 30m = " + tanah.luas())
+console.log("Harga Tanah dengan ukuran 20,5m x 30m dengan harga 1.500.000 permeter persegi =  " + tanah.hargatanah())
+console.log("Luas Tanah dengan tambahan ppn 15% = " + tanah.hargatanahppn())
+console.log("Nominal yang harus di bayarkan adalah " + tanah.hargatanahppn())
+
+
