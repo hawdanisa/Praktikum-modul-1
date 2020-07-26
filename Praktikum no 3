@@ -1,0 +1,18 @@
+let b = 90
+let t = 1.7
+let bb = b/(t**2)
+
+console.log("Berat Badan Rhodey = " + b)
+console.log("Tinggi Badan Rhodey = " + t)
+
+console.log("STATUS BERAT BADAN RHODEY : ")
+
+if (bb < 18.5) {
+    console.log("Kekurangan Berat Badan")
+} else if (bb >= 18.5 && bb <= 24.9) {
+    console.log("Normal (ideal) ")
+} else if (bb >= 25.0 && bb <= 29.0) {
+    console.log("Kelebihan Berat Badan")
+} else {
+    console.log("Kegemukan (obesitas) ")
+}
