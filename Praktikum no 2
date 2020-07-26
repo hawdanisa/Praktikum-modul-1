@@ -1,0 +1,24 @@
+let barang = [
+    { nama : "Beras", harga : 10000, jumlah : 5},
+    { nama : "Gula", harga : 14000, jumlah : 5},
+    { nama : "Telur", harga : 20000, jumlah : 2},
+    { nama : "Minyak Goreng", harga : 9000, jumlah : 10}
+]
+
+//operasi menghitung harga barang barang diatas
+HargaBeras = barang[0].harga * barang[0].jumlah
+HargaGula = barang[1].harga * barang[1].jumlah
+HargaTelur = barang[2].harga * barang[2].jumlah
+HargaMinyak = barang[3].harga * barang[3].jumlah
+
+//menampilkan hasil
+console.log(barang)
+console.log("--------------------------------")
+console.log("Total Harga Beras = " + HargaBeras)
+console.log("Total Harga Gula = " + HargaGula)
+console.log("Total Harga Telur = " + HargaTelur)
+console.log("Total Harga Minyak Goreng = " + HargaMinyak)
+console.log("--------------------------------")
+console.log("Total Nominal yang harus di bayar = " + (HargaBeras+HargaGula+HargaTelur+HargaMinyak))
+
+
